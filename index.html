@@ -1,102 +1,105 @@
-
+```html
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Học cùng Nhân</title>
-  <meta name="description" content="Chia sẻ bài học, kiến thức và tài liệu y khoa.">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #243247;
-      background: #f5f8fc;
-      line-height: 1.7;
-    }
-    header {
-      background: #155e75;
-      color: white;
-      padding: 36px 20px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 32px; }
-    nav {
-      background: white;
-      padding: 14px;
-      text-align: center;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    nav a {
-      margin: 0 12px;
-      color: #155e75;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 18px;
-    }
-    .card {
-      background: white;
-      padding: 22px;
-      margin-bottom: 18px;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-    }
-    .card h2 { color: #155e75; margin-top: 0; }
-    .card a { color: #0e7490; }
-    footer {
-      text-align: center;
-      padding: 24px;
-      color: #64748b;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Góc học tập Y khoa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: #1565c0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00897b;
+        }
+
+        button {
+            background-color: #1565c0;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #answer {
+            display: none;
+            background: #e8f5e9;
+            padding: 12px;
+            margin-top: 15px;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Học cùng Nhân</h1>
-    <p>Học tập · Kiến thức · Tài liệu y khoa</p>
-  </header>
 
-  <nav>
-    <a href="#gioithieu">Giới thiệu</a>
-    <a href="#baihoc">Bài học</a>
-    <a href="#tailieu">Tài liệu</a>
-  </nav>
+    <div class="container">
 
-  <main>
-    <section class="card" id="gioithieu">
-      <h2>Chào mừng bạn!</h2>
-      <p>
-        Đây là không gian chia sẻ kiến thức y khoa,
-        bài học lâm sàng và tài liệu phục vụ học tập.
-      </p>
-    </section>
+        <h1>GÓC HỌC TẬP Y KHOA</h1>
 
-    <section class="card" id="baihoc">
-      <h2>Bài học y khoa</h2>
-      <ul>
-        <li><a href="#tailieu">Sinh lý học</a></li>
-        <li><a href="#tailieu">Nội khoa</a></li>
-        <li><a href="#tailieu">Thận - Tiết niệu</a></li>
-      </ul>
-    </section>
+        <p>
+            Chào mừng bạn đến với website
+            học tập và ôn luyện kiến thức y khoa.
+        </p>
 
-    <section class="card" id="tailieu">
-      <h2>Tài liệu học tập</h2>
-      <p>
-        Bạn có thể bổ sung bài giảng, sơ đồ,
-        tóm tắt kiến thức và tài liệu tham khảo tại đây.
-      </p>
-      <p><em>Nội dung đang được cập nhật.</em></p>
-    </section>
-  </main>
+        <hr>
 
-  <footer>
-    Góc Học Y Khoa · Chia sẻ để cùng học tập
-  </footer>
+        <h2>Bài học: Tăng huyết áp</h2>
+
+        <p>
+            Học viên cần nắm được cách đo huyết áp,
+            chẩn đoán, đánh giá nguy cơ tim mạch
+            và lựa chọn phương pháp điều trị.
+        </p>
+
+        <h2>Câu hỏi ôn tập</h2>
+
+        <p>
+            Khi đánh giá một người bệnh tăng huyết áp,
+            cần chú ý những yếu tố nào?
+        </p>
+
+        <button onclick="showAnswer()">
+            Xem gợi ý
+        </button>
+
+        <div id="answer">
+            <strong>Gợi ý:</strong>
+            Đánh giá mức huyết áp, nguy cơ tim mạch,
+            tổn thương cơ quan đích, bệnh đồng mắc
+            và các yếu tố ảnh hưởng đến điều trị.
+        </div>
+
+    </div>
+
+    <script>
+        function showAnswer() {
+            document.getElementById("answer")
+                .style.display = "block";
+        }
+    </script>
+
 </body>
 </html>
+```
